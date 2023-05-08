@@ -30,7 +30,7 @@ jobs:
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
       
-      - uses: update-artifact@v3
+      - uses: actions/update-artifact@v3
         with:
           name: remark-lint-report
           path: public/
